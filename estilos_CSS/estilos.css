@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*---- Header ---*/
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: #cbccc6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;   
+    
+}
+
+header h1 {
+    margin: 0 0 10% 0;
+    color: #a50fb3;
+    font-family: 'Lato', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    
+}
+
+header nav {
+    height: 100%;
+}
+
+header ul {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #670570;
+}
+
+.WSP-float{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    bottom: 7rem;
+    right: 3rem;  
+}
+
+.WSP-icon {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    bottom: 100px;
+    right: 50px;
+}
+
+
+/* --- MAIN --- */
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+.contactarnos{
+    width: 8rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border: rgb(189, 205, 233);   
+}
+
+.section2 {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.search-container{
+    text-align: center;
+    background-color:#670570;
+      
+}
+
+/*  --- SECTION GALERIA DE SWETTERS ---  */
+
+
+.Sweter1, .Sweter2, .Sweter3, .Sweter4, .Sweter5, .Sweter6 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lato', sans-serif;    
+}
+
+.Sweter1{
+    padding-top: 4rem;
+}
+
+.Sweter6{
+    padding-bottom: 3rem;
+}
+
+img {
+    width: 250px;
+    height: 320px;
+    padding: 1rem 0 1rem 0;
+    border-radius: 3rem;
+}
+
+button{
+    margin: 1rem 0 1rem 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #670570;
+    border-radius: 0.3rem;
+    border-color: #cbccc6;
+}
+
+p{
+    font-weight: 400;
+    font-size:larger;
+    color: #670570;
+}
+
+.Sweter1 {
+    grid-area: Sweter1;
+}
+
+.Sweter2{
+    grid-area: Sweter2;
+}
+
+.Sweter3{
+    grid-area: Sweter3;
+}
+
+.Sweter4{
+    grid-area: Sweter4;
+}
+
+section{
+ display: grid;
+ grid-template-columns: 100%;
+ grid-template-rows: auto;
+ gap: 1rem;
+grid-template-areas: 
+"Sweter1"
+"Sweter2"
+"Sweter3"
+"Sweter4";
+justify-content: center;  
+}
+
+
+/* --- FOOTER ---*/
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #cbccc6;
+    font-family: 'Lato', sans-serif;
+}
+
+footer img {
+    width: 100%;
+}
+
+footer ul {
+    height: 50vh;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerRedesContainer {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.footerRedesContainer div {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Copyright {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #670570;
+}
+
+/* --- CARRITO ---*/
+
+.formulariocarrito{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #670570;
+}
+
+.formulariocarrito p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
+.formulariocarrito h2{
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.tarjetas{
+    width: 20%;
+    height: 20%;
+
+}
+
+
+
+/* --- CONTACTO --- */
+
+
+.formulariocontactos{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+    }
+    
+    .article{
+        width: 100%;
+        height: 100vh; 
+    }
+    
+    .Datos, .Datos2{
+        color: #a50fb3;
+        font-family: 'Lato', sans-serif;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        font-size:xx-large;
+        font-style: italic;
+        font-weight: 800;
+    }
+    
+    .Datos2{
+        font-size:larger;
+       
+    }
+    
+    .maps{
+    
+        width: 100%;
+        height: 100%;
+        margin: 2rem 0 2rem 0;
+        padding-bottom: 8rem;
+    }
+    
+    .DatosDaleFiorita {
+        color: #a50fb3;
+        font-family: 'Lato', sans-serif;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        font-weight: 800;
+    }
+
+ 
+
+    .FondoContacto{
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    .FotoContactoPadre{
+        display: none;
+    }
+
+@media screen and (min-width: 600px) {
+
+    /*====================   HEADER   ==================*/
+
+
+    li { 
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    }
+
+    
+    header {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    header nav {
+        height: 100%;
+        width: 70%;
+    }
+
+    header ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header li {
+        font-size: 1rem;
+    }
+
+    
+
+    
+
+    /* --- MAIN ----*/
+
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+        grid-template-areas: 
+       "Sweter1 Sweter2"
+       "Sweter3 Sweter4"
+       "Sweter5 Sweter5";
+       justify-content: center;}
+
+    .Sweter1, .Sweter2{
+        padding-top: 4rem;
+    }
+
+    .Sweter3, .Sweter4{
+        padding-top: 3rem;
+    }
+
+    .FondoContacto{
+        background-image: none;
+    }
+
+
+    /* --- FOOTER --- */  
+
+        footer {
+        width: 100%;
+        height: 20vh;
+        }
+
+        footer ul {
+            padding-top: 1rem;
+            height: 70%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around    
+        }
+
+        .footerRedesContainer{
+            width: 100%;
+            height: 7vh;
+            justify-items: center;
+        }
+
+        .redes {
+            height: 60%;
+        
+        }
+
+    footer a {
+        font-size: 70%;
+    }
+
+    .tarjetas{
+        max-width: 40%;
+        max-height: 40%;
+    
+    }
+
+    .WSP-float{
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        bottom: 20rem;
+        right:5rem;  
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    header h1 {
+        margin: 0;
+        font-size: 3rem;
+        padding-left: 3rem;
+    }
+        
+
+    /* --- MAIN --- */
+
+    .Sweter1, .Sweter2, .Sweter3{
+        padding-top: 3rem;
+        padding-bottom: 0;
+    }
+
+    .Sweter5, .Sweter6{
+        padding: top 0;
+    }
+
+    .Sweter4{
+        padding-top: 0;
+    }
+
+    section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas: 
+   "Sweter1 Sweter2 Sweter3"
+   "Sweter4 Sweter5 Sweter6"; 
+    }  
+
+    .tarjetas{
+        width: 8%;
+        height: 8%;
+    
+    }
+
+    .WSP-float{
+        bottom: 20rem;
+        right:5rem;  
+    }
+
+
+}
+
+
