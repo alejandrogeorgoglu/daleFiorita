@@ -7,49 +7,31 @@
 
 /*---- Header ---*/
 
-header {
-    width: 100%;
-    height: 100vh;
-    background: #cbccc6;
+
+.nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2rem;   
+    justify-content:end;
     
 }
 
-header h1 {
-    margin: 0 0 10% 0;
-    color: #a50fb3;
+.fondonav {
+    background-color:rgb(196, 200, 209);
+}
+
+.a{
     font-family: 'Lato', sans-serif;
-    font-size: 5rem;
-    text-align: center;
     
 }
 
-header nav {
-    height: 100%;
-}
+.DaleFiorita {
 
-header ul {
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-li {
-    list-style: none;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    font-family: 'Lato', sans-serif;
-}
-
-a {
-    text-decoration: none;
+    font-family: 'Lato', sans-serif;   
+    padding-right: 5rem;
     color: #670570;
-}
+    font-weight: 800;
+
+      }
+
 
 .WSP-float{
     position: fixed;
@@ -57,7 +39,8 @@ a {
     height: 100px;
     line-height: 100px;
     bottom: 7rem;
-    right: 3rem;  
+    right: 3rem;
+    
 }
 
 .WSP-icon {
@@ -67,7 +50,17 @@ a {
     line-height: 100px;
     bottom: 100px;
     right: 50px;
+    
+    
+    
+   
+
 }
+      
+      
+
+    
+
 
 
 /* --- MAIN --- */
@@ -115,7 +108,12 @@ section {
 
 .Sweter1{
     padding-top: 4rem;
+   
 }
+
+
+
+
 
 .Sweter6{
     padding-bottom: 3rem;
@@ -126,6 +124,13 @@ img {
     height: 320px;
     padding: 1rem 0 1rem 0;
     border-radius: 3rem;
+    transition:ease-in 0.5s 
+}
+
+img:hover {
+
+    transform: scale(1.1);
+
 }
 
 button{
@@ -133,9 +138,35 @@ button{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     color: #670570;
-    border-radius: 0.3rem;
-    border-color: #cbccc6;
+    border-color: #fdfdfc;
+    border-style:double;
+    
 }
+
+.buscar {
+    border-style: double;
+    width: 20%;
+    border-radius: 0.5rem;
+}
+
+.Comprar {
+  
+        box-shadow: inset 0 0 0 0 #670570;
+        color: #670570;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        width: 6rem;
+        height: 5rem;
+        border-radius: 1rem;
+       
+      }
+      .Comprar:hover {
+        box-shadow: inset 100px 0 0 0 #74197c;
+        color: white;
+    }
+    
+
 
 p{
     font-weight: 400;
@@ -173,32 +204,21 @@ justify-content: center;
 }
 
 
-/* --- FOOTER ---*/
 
 footer {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: #cbccc6;
+    background: rgb(196, 200, 209);
     font-family: 'Lato', sans-serif;
 }
 
 footer img {
-    width: 100%;
+    width: 20%;
+    height: 70%;
 }
 
-footer ul {
-    height: 50vh;
-    width: 100%;
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 .footerRedesContainer {
-    height: 100%;
+    
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
@@ -206,13 +226,13 @@ footer ul {
 
 .footerRedesContainer div {
     width: 30%;
+    height: 20%;
     display: flex;
     justify-content: center;
 }
 
 
 .Copyright {
-    font-family: 'Lato', sans-serif;
     text-align: center;
     padding-bottom: 1rem;
     color: #670570;
@@ -249,6 +269,35 @@ footer ul {
 }
 
 
+button.btn.btn-primary {
+    background-color: rgb(255, 255, 255);
+    color: #a50fb3;
+    border-color: #bf8bc4;
+    
+}
+
+.Resetear {
+    background-color: rgb(255, 255, 255);
+    color: #a50fb3;
+    border-color: #bf8bc4;
+    width: 93px;
+    height: 38px;
+    border-radius:5px;
+    border-style:dotted
+
+}
+
+.btn-confirmar {
+text-align: center;
+}
+
+.modal-title {
+    color: #a50fb3;
+
+}
+
+
+
 
 /* --- CONTACTO --- */
 
@@ -258,8 +307,10 @@ footer ul {
     height: 100%;
     text-align: center;
     margin: 3rem 0 3rem 0;
+
     }
     
+
     .article{
         width: 100%;
         height: 100vh; 
@@ -279,9 +330,20 @@ footer ul {
         font-size:larger;
        
     }
+
+    .enviar {
+
+        background-color: rgb(255, 255, 255);
+        color: #a50fb3;
+        border-color: #bf8bc4;
+        width: 93px;
+        height: 38px;
+        border-radius:5px;
+        border-style:solid;
+        
+    }
     
     .maps{
-    
         width: 100%;
         height: 100%;
         margin: 2rem 0 2rem 0;
@@ -296,68 +358,20 @@ footer ul {
         font-weight: 800;
     }
 
- 
-
-    .FondoContacto{
+    .email {
         width: 100%;
-        height: 100%;
-       
     }
 
-    .FotoContactoPadre{
-        display: none;
+    .foto-desenfocada {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
     }
 
 @media screen and (min-width: 600px) {
 
-    /*====================   HEADER   ==================*/
 
-
-    li { 
-    list-style: none;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    }
-
-    
-    header {
-        width: 100%;
-        height: 10vh;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 1rem;
-    }
-
-    header h1 {
-        margin: 0;
-        font-size: 2rem;
-    }
-
-    header nav {
-        height: 100%;
-        width: 70%;
-    }
-
-    header ul {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    header li {
-        font-size: 1rem;
-    }
-
-    
-
-    
 
     /* --- MAIN ----*/
 
@@ -385,37 +399,7 @@ footer ul {
     }
 
 
-    /* --- FOOTER --- */  
-
-        footer {
-        width: 100%;
-        height: 20vh;
-        }
-
-        footer ul {
-            padding-top: 1rem;
-            height: 70%;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content:space-around    
-        }
-
-        .footerRedesContainer{
-            width: 100%;
-            height: 7vh;
-            justify-items: center;
-        }
-
-        .redes {
-            height: 60%;
-        
-        }
-
-    footer a {
-        font-size: 70%;
-    }
-
+  
     .tarjetas{
         max-width: 40%;
         max-height: 40%;
@@ -434,12 +418,7 @@ footer ul {
 
 @media screen and (min-width: 1024px) {
 
-    header h1 {
-        margin: 0;
-        font-size: 3rem;
-        padding-left: 3rem;
-    }
-        
+ 
 
     /* --- MAIN --- */
 
