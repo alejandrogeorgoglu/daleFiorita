@@ -1,0 +1,59 @@
+.curso1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    
+}
+
+.curso2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}  
+
+.curso3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+} 
+
+.curso4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+} 
+
+.curso5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+} 
+
+.tutorial{
+ 
+    position: relative;
+    background:rgb(196, 200, 209); 
+     
+    }
+ 
+.tutorial::after {
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    content: '';
+    background:#670570;  
+    
+    height: 3%;
+    width: 100%;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.ptu {
+    padding-top: 1rem;
+}

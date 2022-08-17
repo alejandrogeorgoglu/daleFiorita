@@ -1,0 +1,85 @@
+.formulariocontactos{
+    width: 85%;
+    height: 85%;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    margin-left: 7%;
+    margin-top: 5%;
+    position: relative;
+    background:rgb(196, 200, 209);
+    border-radius: 1rem;
+    background-image: url(../images/trama1.png);
+    
+    }
+ 
+.formulariocontactos::after {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background: #bdc3c7;  
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); 
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);        
+    height: 100%;
+    width: 100%;
+    filter: blur(25px);
+    z-index: -1;
+}
+    .article{
+        width: 100%;
+        height: 100vh; 
+    }
+    
+    .Datos, .Datos2{
+        color: #a50fb3;
+        font-family: 'Lato', sans-serif;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        font-size:xx-large;
+        font-style: italic;
+        font-weight: 800;
+    }
+    
+    .Datos2{
+        font-size:larger;
+       
+    }
+
+    .enviar {
+
+        background-color: rgb(255, 255, 255);
+        color: #a50fb3;
+        border-color: #bf8bc4;
+        width: 93px;
+        height: 38px;
+        border-radius:5px;
+        border-style:solid;      
+    }
+    
+    .maps{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 1rem;
+      
+       
+        
+    }
+
+    .DatosDaleFiorita {
+        color: #a50fb3;
+        font-family: 'Lato', sans-serif;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        font-weight: 800;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .foto-desenfocada {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
