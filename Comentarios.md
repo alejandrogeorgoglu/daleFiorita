@@ -1,11 +1,14 @@
 # daleFiorita
 
 
-Hola Mati, como estás? Te envio lo que avance hasta el momento. Los cambios son:
+Hola Mati, como estás? Te envio los cambios que hice para este desafio:
 
-- sume mas estilos a la web.
-- organice con sass las secciones de la web.
-- se que esta entrega es para BTS, pero como eso ya te lo habia enviado, adelante con sass.
+En sass/style:
+
+- sume variables de ejemplo.
+- realice una operacion de ejemplo.
+- sume extend
+- modifique en main_index la estructura para dar un ejemplo de nesting.
 
 Gracias!
 Saludos.

@@ -198,12 +198,13 @@ button.btn.btn-primary {
   background-color: rgb(196, 200, 209);
 }
 
-.a {
+/*utilizacion de ej. con variables*/
+.font_lato, .DaleFiorita, .a {
   font-family: "Lato", sans-serif;
 }
 
+/* ej. con extend */
 .DaleFiorita {
-  font-family: "Lato", sans-serif;
   padding-right: 5rem;
   padding-left: 5rem;
   color: #670570;
@@ -211,6 +212,7 @@ button.btn.btn-primary {
   font-size: 2rem;
 }
 
+/* utilizacion de ej. con operaciones*/
 .WSP-float {
   position: fixed;
   width: 100px;
@@ -221,16 +223,18 @@ button.btn.btn-primary {
   z-index: 1;
 }
 
+/* aplicacion de mixin */
 .WSP-icon {
-  text-align: center;
-  width: 100px;
   height: 100px;
+  width: 100px;
+  text-align: center;
   line-height: 100px;
   bottom: 100px;
   right: 50px;
 }
 
 /* --- MAIN --- */
+/* ejemplo de nesting */
 .main_index div {
   display: flex;
   flex-direction: column;

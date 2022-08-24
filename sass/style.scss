@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -22,35 +21,55 @@
     
 }
 
+/*utilizacion de ej. con variables*/
+
+$fuccia:#670570; 
+$width: 200px;
+$height: 100px;
+
+.font_lato {
+
+    font-family: 'Lato', sans-serif;
+}
+
+/* ej. con extend */
 
 .a {
-    font-family: 'Lato', sans-serif;
+    @extend .font_lato;
 }
 
 .DaleFiorita {
 
-    font-family: 'Lato', sans-serif;   
+    @extend .font_lato;  
     padding-right: 5rem;
     padding-left: 5rem;
-    color:#670570;
-    font-weight: 800;
-    font-size: 2rem;
+    color: $fuccia;
+    font-weight:800;
+    font-size:2rem;
 }
+   
+/* utilizacion de ej. con operaciones*/
 
 .WSP-float {
     position: fixed;
-    width: 100px;
-    height: 100px;
+    width: (($width/2)+200px)/3; 
+    height: ($height/2)+50;
     line-height: 100px;
     bottom: 7rem;
     right: 3rem;
     z-index: 1;
 }
 
+/* aplicacion de mixin */
+
+@mixin tamaño ($width, $height) {
+    height: $height;
+    width: $width;
+}
+
 .WSP-icon {
+    @include tamaño(100px, 100px); 
     text-align: center;
-    width: 100px;
-    height: 100px;
     line-height: 100px;
     bottom: 100px;
     right: 50px;
@@ -58,10 +77,9 @@
 
 /* --- MAIN --- */
 
+/* ejemplo de nesting */
 
-
-.main_index {
-
+.main_index {   
 
     div {
         display: flex;
@@ -71,22 +89,22 @@
         width:100%;
         height: 100%;
 
-    h1 {
-        font-family: 'Lato', sans-serif;
-        font-size: 3.5rem;
-        text-align: center;
-        color: #74197c;
-        width: 90%;
-        padding-top: 9rem;
-             
-    }
-    .parrafo1{
-        font-family: 'Lato', sans-serif;
-        font-size: 1.5rem;
-        padding-top: 6rem;
-        padding-bottom: 8rem;
-        width: 60%;
-    }
+        h1 {
+            font-family: 'Lato', sans-serif;
+            font-size: 3.5rem;
+            text-align: center;
+            color: #74197c;
+            width: 90%;
+            padding-top: 9rem;
+                
+        }
+        .parrafo1{
+            font-family: 'Lato', sans-serif;
+            font-size: 1.5rem;
+            padding-top: 6rem;
+            padding-bottom: 8rem;
+            width: 60%;
+        }
    } 
 }
 
@@ -110,7 +128,7 @@ section {
 
 .search-container {
     text-align: center;
-    background-color: #670570;
+    background-color: $fuccia;
 }
 
 /*  --- SECTION GALERIA DE SWETTERS ---  */
@@ -146,7 +164,7 @@ button {
     margin: 1rem 0 1rem 0;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    color: #670570;
+    color: $fuccia;
     border-color: #fdfdfc;
     border-style: double;
 }
@@ -158,8 +176,8 @@ button {
 }
 
 .Comprar {
-    box-shadow: inset 0 0 0 0 #670570;
-    color: #670570;
+    box-shadow: inset 0 0 0 0 $fuccia;
+    color: $fuccia;
     margin: 0 -.25rem;
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -176,7 +194,7 @@ button {
 p {
     font-weight: 400;
     font-size: larger;
-    color: #670570;
+    color: $fuccia;
 }
 
 .Sweter1 {
@@ -240,7 +258,7 @@ footer img {
 .Copyright {
     text-align: center;
     padding-bottom: 1rem;
-    color: #670570;
+    color: $fuccia;
 }
 
 
