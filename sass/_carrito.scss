@@ -1,3 +1,5 @@
+$fuccia:#670570; 
+
 .formulariocarrito{
     height: 100%;
     width: 100%;
@@ -36,8 +38,8 @@ button.btn.btn-primary {
 
 .Resetear {
     background-color: rgb(255, 255, 255);
-    color: #a50fb3;
-    border-color: #bf8bc4;
+    color:$fuccia;
+    border-color: $fuccia;
     width: 93px;
     height: 38px;
     border-radius:5px;

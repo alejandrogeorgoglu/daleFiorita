@@ -32,8 +32,8 @@ button.btn.btn-primary {
 
 .Resetear {
   background-color: rgb(255, 255, 255);
-  color: #a50fb3;
-  border-color: #bf8bc4;
+  color: #670570;
+  border-color: #670570;
   width: 93px;
   height: 38px;
   border-radius: 5px;
@@ -81,7 +81,7 @@ button.btn.btn-primary {
 }
 
 .Datos, .Datos2 {
-  color: #a50fb3;
+  color: #670570;
   font-family: "Lato", sans-serif;
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -96,8 +96,8 @@ button.btn.btn-primary {
 
 .enviar {
   background-color: rgb(255, 255, 255);
-  color: #a50fb3;
-  border-color: #bf8bc4;
+  color: #670570;
+  border-color: #670570;
   width: 93px;
   height: 38px;
   border-radius: 5px;
@@ -111,7 +111,7 @@ button.btn.btn-primary {
 }
 
 .DatosDaleFiorita {
-  color: #a50fb3;
+  color: #670570;
   font-family: "Lato", sans-serif;
   padding-bottom: 1rem;
   padding-top: 1rem;

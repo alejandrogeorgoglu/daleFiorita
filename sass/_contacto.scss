@@ -6,7 +6,7 @@ $box:
 inset 0px 0px 0px 0px #fff9,
 inset 0px 0px 0px 0px #0001,
 inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
-
+$fuccia:#670570; 
 
 .formulariocontactos{
     width: 85%;
@@ -41,7 +41,7 @@ inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
     }
     
     .Datos, .Datos2{
-        color: #a50fb3;
+        color: $fuccia;
         font-family: 'Lato', sans-serif;
         padding-bottom: 1rem;
         padding-top: 1rem;
@@ -58,8 +58,8 @@ inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
     .enviar {
 
         background-color: rgb(255, 255, 255);
-        color: #a50fb3;
-        border-color: #bf8bc4;
+        color: $fuccia;
+        border-color:$fuccia;
         width: 93px;
         height: 38px;
         border-radius:5px;
@@ -76,7 +76,7 @@ inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
     }
 
     .DatosDaleFiorita {
-        color: #a50fb3;
+        color: $fuccia;
         font-family: 'Lato', sans-serif;
         padding-bottom: 1rem;
         padding-top: 1rem;
