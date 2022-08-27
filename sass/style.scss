@@ -1,7 +1,6 @@
 @import "carrito";
 @import "contacto";
 @import "cursos";
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
 
 * {
@@ -13,12 +12,11 @@
 
 .nav {
     display: flex;
-    justify-content: end;
+    justify-content: end;   
 }
 
 .fondonav {
-    background-color: rgb(196, 200, 209);
-    
+    background-color: rgb(196, 200, 209);   
 }
 
 /*utilizacion de ej. con variables*/
@@ -26,6 +24,20 @@
 $fuccia:#670570; 
 $width: 200px;
 $height: 100px;
+$bg: #f0f0f3;
+$box: 
+-7px -7px 20px 0px #fff9,
+-4px -4px 5px 0px #fff9,
+7px 7px 20px 0px #0002,
+4px 4px 5px 0px #0001,
+inset 0px 0px 0px 0px #fff9,
+inset 0px 0px 0px 0px #0001,
+inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+
+
+body{
+    background-color:$bg;
+}
 
 .font_lato {
 
@@ -41,23 +53,25 @@ $height: 100px;
 .DaleFiorita {
 
     @extend .font_lato;  
-    padding-right: 5rem;
-    padding-left: 5rem;
+    padding-right: 0.5rem;
+    padding-left: 1rem;
     color: $fuccia;
     font-weight:800;
-    font-size:2rem;
+    font-size:2.5rem;      
 }
    
 /* utilizacion de ej. con operaciones*/
 
 .WSP-float {
     position: fixed;
-    width: (($width/2)+200px)/3; 
-    height: ($height/2)+50;
+    width: ($width/2); 
+    height: ($height);
     line-height: 100px;
     bottom: 7rem;
     right: 3rem;
     z-index: 1;
+    border-radius: 50%;
+    box-shadow: $box;
 }
 
 /* aplicacion de mixin */
@@ -88,22 +102,31 @@ $height: 100px;
         align-items: center;
         width:100%;
         height: 100%;
-
+        padding-bottom: 6rem;
+        padding-top: 2rem;
+        
+        .h1_index {
+            padding-bottom: 2rem;
         h1 {
             font-family: 'Lato', sans-serif;
             font-size: 3.5rem;
             text-align: center;
             color: #74197c;
             width: 90%;
-            padding-top: 9rem;
-                
+            padding-top: 4rem;
+            padding-bottom: 5rem;
+            box-shadow:$box;
+            border-radius: 1rem;
+            }       
         }
         .parrafo1{
             font-family: 'Lato', sans-serif;
-            font-size: 1.5rem;
-            padding-top: 6rem;
-            padding-bottom: 8rem;
-            width: 60%;
+            font-size: 1.5rem;  
+            padding: 3rem 3rem 3rem 3rem;
+            width: 80%;
+            height: 20%;
+            border-radius: 1rem;
+            box-shadow:$box            
         }
    } 
 }
@@ -141,7 +164,7 @@ section {
     align-items: center;
     justify-content: center;
     font-family: 'Lato', sans-serif;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem;  
 }
 
 .Sweter1 {
@@ -172,23 +195,25 @@ button {
 .buscar {
     border-style: double;
     width: 20%;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem;  
 }
 
 .Comprar {
     box-shadow: inset 0 0 0 0 $fuccia;
-    color: $fuccia;
+    color:#9c1ca8;
     margin: 0 -.25rem;
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     width: 6rem;
     height: 4rem;
     border-radius: 1rem;
+    box-shadow:$box     
 }
 
 .Comprar:hover {
     box-shadow: inset 100px 0 0 0 #74197c;
-    color: white;
+    color:$fuccia;
+    box-shadow:$box     
 }
 
 p {
@@ -223,8 +248,7 @@ section {
         "Sweter2"
         "Sweter3"
         "Sweter4";
-    justify-content: center;
-   
+    justify-content: center;   
 }
 
 /* --- FOOTER --- */
@@ -255,10 +279,35 @@ footer img {
     justify-content: center;
 }
 
+
+.redes{
+    height: 60px;
+    width: 60px;
+    border-radius: 6px;
+    background: #e0e5ec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    box-shadow:$box
+  }
+
+  .redes:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
+
 .Copyright {
     text-align: center;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
     color: $fuccia;
+    text-decoration: none;   
 }
 
 
@@ -297,15 +346,6 @@ footer img {
         max-height: 40%;
     }
 
-    .WSP-float {
-        position: fixed;
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
-        bottom: 20rem;
-        right: 5rem;
-    }
-
     .formulariocontactos {
         width: 85%;
         height: 85%;
@@ -317,8 +357,6 @@ footer img {
     .DaleFiorita{
         font-size: 3rem;
     }
-
-  
 }
 
 @media screen and (min-width: 1024px) {
@@ -358,7 +396,7 @@ footer img {
 
     .WSP-float {
         bottom: 20rem;
-        right: 5rem;
+        right: 5rem;       
     }
 
     .formulariocontactos {
@@ -368,6 +406,8 @@ footer img {
         margin: 1rem 0 1rem 0;
         margin-left: 25%;
     }
+}
 
-
+.search-container {
+    box-shadow: $box;
 }
