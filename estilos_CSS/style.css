@@ -220,6 +220,11 @@ body {
 }
 
 /* ej. con extend */
+.btn-DaleFiorita {
+  background-color: rgb(196, 200, 209);
+  border: none;
+}
+
 .DaleFiorita {
   padding-right: 0.5rem;
   padding-left: 1rem;
